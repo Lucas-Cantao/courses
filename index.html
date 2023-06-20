@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapping Courses</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script defer src="script/script.js"></script>
+    <script src="https://kit.fontawesome.com/65f22fe718.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+    <!-- barra do topo -->
+<main>
+    <div class="topbar">
+        <p class="name">Mapping Courses</p>
+        <ul>
+            <li><a href="">sobre</a></li>
+            <li><a href="">contato</a></li>
+        </ul>
+    </div>
+</main>
+
+<!-- barra lateral -->
+
+<main>
+    
+    <div class="sidebar">
+        <img src="images/html.png" alt="html_logo">
+        <img src="images/css.png" alt="css_logo">
+        <img src="images/js.png" alt="javascript_logo">
+        <img src="images/python.png" alt="python_logo">
+        <img src="images/java.png" alt="java_logo">
+        <img src="images/kotlin.png" alt="kotlin_logo">
+        <img src="images/swift.png" alt="swift_logo">
+        <img src="images/c++.png" alt="c++_logo">
+    </div>
+
+    <!-- TODAS CATEGORIAS -->
+
+
+
+    <div class="content">
+        <div class="course_details"></div>
+
+        <div class="all">
+            <span id="top">All</span>
+            <div class="videos">
+                <div class="video">
+                    <div class="card">
+                        <div class="card-details">
+                            <img id="img" src="images/thumbs/html1.jpg" alt="html">
+                            <p>conteúdo</p>
+                            <p><svg class="html" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>.html{fill:#ff4000}</style><path d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"/></svg></p>
+                        </div>
+                        <button class="card-button" onclick="createIFRAME(1)">More info</button>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="card">
+                        <div class="card-details">
+                            <img id="img" src="images/thumbs/html2.jpg" alt="html">
+                            <p>conteúdo</p>
+                            <p><svg class="html" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>.html{fill:#ff4000}</style><path d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"/></svg> & <svg class="css" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>.css{fill:#2474ff}</style><path d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3.1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2.1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z"/></svg></p>
+                        </div>
+                        <button class="card-button" onclick="createIFRAME(2)">More info</button>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="card">
+                        <div class="card-details">
+                            <img id="img" src="images/thumbs/js.jpg" alt="html">
+                            <p>conteúdo</p>
+                            <p><svg class="js" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>.js{fill:#e6de05}</style><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM243.8 381.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z"/></svg></p>
+                        </div>
+                        <button class="card-button" onclick="createIFRAME(3)">More info</button>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="card">
+                        <div class="card-details">
+                            <img id="img" src="images/thumbs/python.jpg" alt="html">
+                            <p>conteúdo</p>
+                            <img src="images/python.png" alt="" id="icon">
+                        </div>
+                        <button class="card-button" onclick="createIFRAME(4)">More info</button>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="card">
+                        <div class="card-details">
+                            <img id="img" src="images/thumbs/java.jpg" alt="html">
+                            <p>conteúdo</p>
+                            <p><svg class="java" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>.java{fill:#ff5024}</style><path d="M277.74 312.9c9.8-6.7 23.4-12.5 23.4-12.5s-38.7 7-77.2 10.2c-47.1 3.9-97.7 4.7-123.1 1.3-60.1-8 33-30.1 33-30.1s-36.1-2.4-80.6 19c-52.5 25.4 130 37 224.5 12.1zm-85.4-32.1c-19-42.7-83.1-80.2 0-145.8C296 53.2 242.84 0 242.84 0c21.5 84.5-75.6 110.1-110.7 162.6-23.9 35.9 11.7 74.4 60.2 118.2zm114.6-176.2c.1 0-175.2 43.8-91.5 140.2 24.7 28.4-6.5 54-6.5 54s62.7-32.4 33.9-72.9c-26.9-37.8-47.5-56.6 64.1-121.3zm-6.1 270.5a12.19 12.19 0 0 1-2 2.6c128.3-33.7 81.1-118.9 19.8-97.3a17.33 17.33 0 0 0-8.2 6.3 70.45 70.45 0 0 1 11-3c31-6.5 75.5 41.5-20.6 91.4zM348 437.4s14.5 11.9-15.9 21.2c-57.9 17.5-240.8 22.8-291.6.7-18.3-7.9 16-19 26.8-21.3 11.2-2.4 17.7-2 17.7-2-20.3-14.3-131.3 28.1-56.4 40.2C232.84 509.4 401 461.3 348 437.4zM124.44 396c-78.7 22 47.9 67.4 148.1 24.5a185.89 185.89 0 0 1-28.2-13.8c-44.7 8.5-65.4 9.1-106 4.5-33.5-3.8-13.9-15.2-13.9-15.2zm179.8 97.2c-78.7 14.8-175.8 13.1-233.3 3.6 0-.1 11.8 9.7 72.4 13.6 92.2 5.9 233.8-3.3 237.1-46.9 0 0-6.4 16.5-76.2 29.7zM260.64 353c-59.2 11.4-93.5 11.1-136.8 6.6-33.5-3.5-11.6-19.7-11.6-19.7-86.8 28.8 48.2 61.4 169.5 25.9a60.37 60.37 0 0 1-21.1-12.8z"/></svg></p>
+                        </div>
+                        <button class="card-button" onclick="createIFRAME(5)">More info</button>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="card">
+                        <div class="card-details">
+                            <img id="img" src="images/thumbs/kotlin.jpg" alt="html">
+                            <p>conteúdo</p>
+                            <img src="images/kotlin.png" alt="" id="icon">
+                        </div>
+                        <button class="card-button" onclick="createIFRAME(6)">More info</button>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="card">
+                        <div class="card-details">
+                            <img id="img" src="images/thumbs/swift2.jpg" alt="html">
+                            <p>conteúdo</p>
+                            <p><svg class="swift" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>.swift{fill:#ff4733}</style><path d="M448 156.09c0-4.51-.08-9-.2-13.52a196.31 196.31 0 0 0-2.58-29.42 99.62 99.62 0 0 0-9.22-28A94.08 94.08 0 0 0 394.84 44a99.17 99.17 0 0 0-28-9.22 195 195 0 0 0-29.43-2.59c-4.51-.12-9-.17-13.52-.2H124.14c-4.51 0-9 .08-13.52.2-2.45.07-4.91.15-7.37.27a171.68 171.68 0 0 0-22.06 2.32 103.06 103.06 0 0 0-21.21 6.1q-3.46 1.45-6.81 3.12a94.66 94.66 0 0 0-18.39 12.32c-1.88 1.61-3.69 3.28-5.43 5A93.86 93.86 0 0 0 12 85.17a99.45 99.45 0 0 0-9.22 28 196.31 196.31 0 0 0-2.54 29.4c-.13 4.51-.18 9-.21 13.52v199.83c0 4.51.08 9 .21 13.51a196.08 196.08 0 0 0 2.58 29.42 99.3 99.3 0 0 0 9.22 28A94.31 94.31 0 0 0 53.17 468a99.47 99.47 0 0 0 28 9.21 195 195 0 0 0 29.43 2.59c4.5.12 9 .17 13.52.2H323.91c4.51 0 9-.08 13.52-.2a196.59 196.59 0 0 0 29.44-2.59 99.57 99.57 0 0 0 28-9.21A94.22 94.22 0 0 0 436 426.84a99.3 99.3 0 0 0 9.22-28 194.79 194.79 0 0 0 2.59-29.42c.12-4.5.17-9 .2-13.51V172.14c-.01-5.35-.01-10.7-.01-16.05zm-69.88 241c-20-38.93-57.23-29.27-76.31-19.47-1.72 1-3.48 2-5.25 3l-.42.25c-39.5 21-92.53 22.54-145.85-.38A234.64 234.64 0 0 1 45 290.12a230.63 230.63 0 0 0 39.17 23.37c56.36 26.4 113 24.49 153 0-57-43.85-104.6-101-141.09-147.22a197.09 197.09 0 0 1-18.78-25.9c43.7 40 112.7 90.22 137.48 104.12-52.57-55.49-98.89-123.94-96.72-121.74 82.79 83.42 159.18 130.59 159.18 130.59 2.88 1.58 5 2.85 6.73 4a127.44 127.44 0 0 0 4.16-12.47c13.22-48.33-1.66-103.58-35.31-149.2C329.61 141.75 375 229.34 356.4 303.42c-.44 1.73-.95 3.4-1.44 5.09 38.52 47.4 28.04 98.17 23.13 88.59z"/></svg></p>
+                        </div>
+                        <button class="card-button" onclick="createIFRAME(7)">More info</button>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="card">
+                        <div class="card-details">
+                            <img id="img" src="images/thumbs/c++.jpg" alt="html">
+                            <p>conteúdo</p>
+                            <img src="images/c++.png" alt="" id="icon">
+                        </div>
+                        <button class="card-button" onclick="createIFRAME(8)">More info</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- FIM DE TODAS AS CATEGORIAS -->
+
+
+
+<!-- CATEGORIA HTML -->
+
+
+        <div class="all">
+            <span>HTML</span>
+            <div class="videos">
+                <div class="video">
+                    <div class="card">
+                        <div class="card-details">
+                            <img id="img" src="images/thumbs/html1.jpg" alt="html">
+                            <p>conteúdo</p>
+                            <p><svg class="html" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>.html{fill:#ff4000}</style><path d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"/></svg></p>
+                        </div>
+                        <button class="card-button" onclick="createIFRAME(1)">More info</button>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="card">
+                        <div class="card-details">
+                            <img id="img" src="images/thumbs/html3.jpg" alt="html">
+                            <p>conteúdo</p>
+                            <p><svg class="html" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>.html{fill:#ff4000}</style><path d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"/></svg></p>
+                        </div>
+                        <button class="card-button" onclick="createIFRAME(9)">More info</button>
+                    </div>
+                </div>
+            </div>
+            <div class="more-videos"><a href="./pages/01-html.html">...mais vídeos</a></div>
+        </div>
+
+
+<!-- FIM CATEGORIA HTML -->
+
+<!-- CATEGORIA CSS -->
+
+        <div class="all">
+            <span>css</span>
+            <div class="videos">
+                <div class="video">
+                    <div class="card">
+                        <div class="card-details">
+                            <img id="img" src="images/thumbs/css1.jpg" alt="html">
+                            <p>conteúdo</p>
+                            <p><svg class="css" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>.css{fill:#2474ff}</style><path d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3.1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2.1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z"/></svg></p>
+                        </div>
+                        <button class="card-button" onclick="createIFRAME(10)">More info</button>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="card">
+                        <div class="card-details">
+                            <img id="img" src="images/thumbs/css2.jpg" alt="html">
+                            <p>conteúdo</p>
+                            <p><svg class="css" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>.css{fill:#2474ff}</style><path d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3.1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2.1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z"/></svg></p>
+                        </div>
+                        <button class="card-button" onclick="createIFRAME(11)">More info</button>
+                    </div>
+                </div>
+            </div>
+            <div class="more-videos"><a href="./pages/02-css.html">...mais vídeos</a></div>
+        </div>
+
+
+<!-- FIM CATEGORIA CSS -->
+
+
+
+<!-- CATEGORIA JAVASCRIPT -->
+
+        <div class="all">
+            <span>javascript</span>
+            <div class="videos">
+                <div class="video">
+                    <div class="card">
+                        <div class="card-details">
+                            <img id="img" src="images/thumbs/js1.jpg" alt="html">
+                            <p>conteúdo</p>
+                            <p><svg class="js" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>.js{fill:#e6de05}</style><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM243.8 381.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z"/></svg></p>
+                        </div>
+                        <button class="card-button" onclick="createIFRAME(12)">More info</button>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="card">
+                        <div class="card-details">
+                            <img id="img" src="images/thumbs/js.jpg" alt="html">
+                            <p>conteúdo</p>
+                            <p><svg class="js" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>.js{fill:#e6de05}</style><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM243.8 381.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z"/></svg></p>
+                        </div>
+                        <button class="card-button" onclick="createIFRAME(3)">More info</button>
+                    </div>
+                </div>
+            </div>
+            <div class="more-videos"><a href="./pages/03-javascript.html">...mais vídeos</a></div>
+        </div>
+
+
+
+<!-- FIM CATEFORIA JAVACRIPT -->
+
+
+<!-- CATEGORIA PYTHON -->
+
+        <div class="all">
+            <span>python</span>
+            <div class="videos">
+                <div class="video">
+                    <div class="card">
+                        <div class="card-details">
+                            <img id="img" src="images/thumbs/python.jpg" alt="html">
+                            <p>conteúdo</p>
+                            <img src="images/python.png" alt="" id="icon">
+                        </div>
+                        <button class="card-button" onclick="createIFRAME(4)">More info</button>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="card">
+                        <div class="card-details">
+                            <img id="img" src="images/thumbs/python1.jpg" alt="html">
+                            <p>conteúdo</p>
+                            <img src="images/python.png" alt="" id="icon">
+                        </div>
+                        <button class="card-button" onclick="createIFRAME(13)">More info</button>
+                    </div>
+                </div>
+            </div>
+            <div class="more-videos"><a href="./pages/04-python.html">...mais vídeos</a></div>
+        </div>
+
+
+<!-- FIM CATEGORIA PYTHON -->
+
+
+<!-- CATEGORIA JAVA -->
+
+        <div class="all">
+            <span>java</span>
+            <div class="videos">
+                <div class="video">
+                    <div class="card">
+                        <div class="card-details">
+                            <img id="img" src="images/thumbs/java.jpg" alt="html">
+                            <p>conteúdo</p>
+                            <p><svg class="java" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>.java{fill:#ff5024}</style><path d="M277.74 312.9c9.8-6.7 23.4-12.5 23.4-12.5s-38.7 7-77.2 10.2c-47.1 3.9-97.7 4.7-123.1 1.3-60.1-8 33-30.1 33-30.1s-36.1-2.4-80.6 19c-52.5 25.4 130 37 224.5 12.1zm-85.4-32.1c-19-42.7-83.1-80.2 0-145.8C296 53.2 242.84 0 242.84 0c21.5 84.5-75.6 110.1-110.7 162.6-23.9 35.9 11.7 74.4 60.2 118.2zm114.6-176.2c.1 0-175.2 43.8-91.5 140.2 24.7 28.4-6.5 54-6.5 54s62.7-32.4 33.9-72.9c-26.9-37.8-47.5-56.6 64.1-121.3zm-6.1 270.5a12.19 12.19 0 0 1-2 2.6c128.3-33.7 81.1-118.9 19.8-97.3a17.33 17.33 0 0 0-8.2 6.3 70.45 70.45 0 0 1 11-3c31-6.5 75.5 41.5-20.6 91.4zM348 437.4s14.5 11.9-15.9 21.2c-57.9 17.5-240.8 22.8-291.6.7-18.3-7.9 16-19 26.8-21.3 11.2-2.4 17.7-2 17.7-2-20.3-14.3-131.3 28.1-56.4 40.2C232.84 509.4 401 461.3 348 437.4zM124.44 396c-78.7 22 47.9 67.4 148.1 24.5a185.89 185.89 0 0 1-28.2-13.8c-44.7 8.5-65.4 9.1-106 4.5-33.5-3.8-13.9-15.2-13.9-15.2zm179.8 97.2c-78.7 14.8-175.8 13.1-233.3 3.6 0-.1 11.8 9.7 72.4 13.6 92.2 5.9 233.8-3.3 237.1-46.9 0 0-6.4 16.5-76.2 29.7zM260.64 353c-59.2 11.4-93.5 11.1-136.8 6.6-33.5-3.5-11.6-19.7-11.6-19.7-86.8 28.8 48.2 61.4 169.5 25.9a60.37 60.37 0 0 1-21.1-12.8z"/></svg></p>
+                        </div>
+                        <button class="card-button" onclick="createIFRAME(5)">More info</button>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="card">
+                        <div class="card-details">
+                            <img id="img" src="images/thumbs/java1.jpg" alt="html">
+                            <p>conteúdo</p>
+                            <p><svg class="java" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>.java{fill:#ff5024}</style><path d="M277.74 312.9c9.8-6.7 23.4-12.5 23.4-12.5s-38.7 7-77.2 10.2c-47.1 3.9-97.7 4.7-123.1 1.3-60.1-8 33-30.1 33-30.1s-36.1-2.4-80.6 19c-52.5 25.4 130 37 224.5 12.1zm-85.4-32.1c-19-42.7-83.1-80.2 0-145.8C296 53.2 242.84 0 242.84 0c21.5 84.5-75.6 110.1-110.7 162.6-23.9 35.9 11.7 74.4 60.2 118.2zm114.6-176.2c.1 0-175.2 43.8-91.5 140.2 24.7 28.4-6.5 54-6.5 54s62.7-32.4 33.9-72.9c-26.9-37.8-47.5-56.6 64.1-121.3zm-6.1 270.5a12.19 12.19 0 0 1-2 2.6c128.3-33.7 81.1-118.9 19.8-97.3a17.33 17.33 0 0 0-8.2 6.3 70.45 70.45 0 0 1 11-3c31-6.5 75.5 41.5-20.6 91.4zM348 437.4s14.5 11.9-15.9 21.2c-57.9 17.5-240.8 22.8-291.6.7-18.3-7.9 16-19 26.8-21.3 11.2-2.4 17.7-2 17.7-2-20.3-14.3-131.3 28.1-56.4 40.2C232.84 509.4 401 461.3 348 437.4zM124.44 396c-78.7 22 47.9 67.4 148.1 24.5a185.89 185.89 0 0 1-28.2-13.8c-44.7 8.5-65.4 9.1-106 4.5-33.5-3.8-13.9-15.2-13.9-15.2zm179.8 97.2c-78.7 14.8-175.8 13.1-233.3 3.6 0-.1 11.8 9.7 72.4 13.6 92.2 5.9 233.8-3.3 237.1-46.9 0 0-6.4 16.5-76.2 29.7zM260.64 353c-59.2 11.4-93.5 11.1-136.8 6.6-33.5-3.5-11.6-19.7-11.6-19.7-86.8 28.8 48.2 61.4 169.5 25.9a60.37 60.37 0 0 1-21.1-12.8z"/></svg></p>
+                        </div>
+                        <button class="card-button" onclick="createIFRAME(14)">More info</button>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="more-videos"><a href="./pages/05-java.html">...mais vídeos</a></div>
+        </div>
+        
+        
+<!-- FIM CATEGORIA JAVA -->
+        
+        
+<!-- CATEGORIA KOTLIN -->
+
+
+        <div class="all">
+            <span>Kotlin</span>
+            <div class="videos">
+                <div class="video">
+                    <div class="card">
+                        <div class="card-details">
+                            <img id="img" src="images/thumbs/kotlin.jpg" alt="html">
+                            <p>conteúdo</p>
+                            <img src="images/kotlin.png" alt="" id="icon">
+                        </div>
+                        <button class="card-button" onclick="createIFRAME(6)">More info</button>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="card">
+                        <div class="card-details">
+                            <img id="img" src="images/thumbs/kotlin1.jpg" alt="html">
+                            <p>conteúdo</p>
+                            <img src="images/kotlin.png" alt="" id="icon">
+                        </div>
+                        <button class="card-button" onclick="createIFRAME(15)">More info</button>
+                    </div>
+                </div>
+            </div>
+            <div class="more-videos"><a href="./pages/06-kotlin.html">...mais vídeos</a></div>
+        </div>
+
+
+<!-- FIM CATEGORIA KOTLIN -->
+
+<!-- CATEGORIA SWIFT -->
+
+
+        <div class="all">
+            <span>Swift</span>
+            <div class="videos">
+                <div class="video">
+                    <div class="card">
+                        <div class="card-details">
+                            <img id="img" src="images/thumbs/swift2.jpg" alt="html">
+                            <p>conteúdo</p>
+                            <p><svg class="swift" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>.swift{fill:#ff4733}</style><path d="M448 156.09c0-4.51-.08-9-.2-13.52a196.31 196.31 0 0 0-2.58-29.42 99.62 99.62 0 0 0-9.22-28A94.08 94.08 0 0 0 394.84 44a99.17 99.17 0 0 0-28-9.22 195 195 0 0 0-29.43-2.59c-4.51-.12-9-.17-13.52-.2H124.14c-4.51 0-9 .08-13.52.2-2.45.07-4.91.15-7.37.27a171.68 171.68 0 0 0-22.06 2.32 103.06 103.06 0 0 0-21.21 6.1q-3.46 1.45-6.81 3.12a94.66 94.66 0 0 0-18.39 12.32c-1.88 1.61-3.69 3.28-5.43 5A93.86 93.86 0 0 0 12 85.17a99.45 99.45 0 0 0-9.22 28 196.31 196.31 0 0 0-2.54 29.4c-.13 4.51-.18 9-.21 13.52v199.83c0 4.51.08 9 .21 13.51a196.08 196.08 0 0 0 2.58 29.42 99.3 99.3 0 0 0 9.22 28A94.31 94.31 0 0 0 53.17 468a99.47 99.47 0 0 0 28 9.21 195 195 0 0 0 29.43 2.59c4.5.12 9 .17 13.52.2H323.91c4.51 0 9-.08 13.52-.2a196.59 196.59 0 0 0 29.44-2.59 99.57 99.57 0 0 0 28-9.21A94.22 94.22 0 0 0 436 426.84a99.3 99.3 0 0 0 9.22-28 194.79 194.79 0 0 0 2.59-29.42c.12-4.5.17-9 .2-13.51V172.14c-.01-5.35-.01-10.7-.01-16.05zm-69.88 241c-20-38.93-57.23-29.27-76.31-19.47-1.72 1-3.48 2-5.25 3l-.42.25c-39.5 21-92.53 22.54-145.85-.38A234.64 234.64 0 0 1 45 290.12a230.63 230.63 0 0 0 39.17 23.37c56.36 26.4 113 24.49 153 0-57-43.85-104.6-101-141.09-147.22a197.09 197.09 0 0 1-18.78-25.9c43.7 40 112.7 90.22 137.48 104.12-52.57-55.49-98.89-123.94-96.72-121.74 82.79 83.42 159.18 130.59 159.18 130.59 2.88 1.58 5 2.85 6.73 4a127.44 127.44 0 0 0 4.16-12.47c13.22-48.33-1.66-103.58-35.31-149.2C329.61 141.75 375 229.34 356.4 303.42c-.44 1.73-.95 3.4-1.44 5.09 38.52 47.4 28.04 98.17 23.13 88.59z"/></svg></p>
+                        </div>
+                        <button class="card-button" onclick="createIFRAME(7)">More info</button>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="card">
+                        <div class="card-details">
+                            <img id="img" src="images/thumbs/swift1.jpg" alt="html">
+                            <p>conteúdo</p>
+                            <p><svg class="swift" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>.swift{fill:#ff4733}</style><path d="M448 156.09c0-4.51-.08-9-.2-13.52a196.31 196.31 0 0 0-2.58-29.42 99.62 99.62 0 0 0-9.22-28A94.08 94.08 0 0 0 394.84 44a99.17 99.17 0 0 0-28-9.22 195 195 0 0 0-29.43-2.59c-4.51-.12-9-.17-13.52-.2H124.14c-4.51 0-9 .08-13.52.2-2.45.07-4.91.15-7.37.27a171.68 171.68 0 0 0-22.06 2.32 103.06 103.06 0 0 0-21.21 6.1q-3.46 1.45-6.81 3.12a94.66 94.66 0 0 0-18.39 12.32c-1.88 1.61-3.69 3.28-5.43 5A93.86 93.86 0 0 0 12 85.17a99.45 99.45 0 0 0-9.22 28 196.31 196.31 0 0 0-2.54 29.4c-.13 4.51-.18 9-.21 13.52v199.83c0 4.51.08 9 .21 13.51a196.08 196.08 0 0 0 2.58 29.42 99.3 99.3 0 0 0 9.22 28A94.31 94.31 0 0 0 53.17 468a99.47 99.47 0 0 0 28 9.21 195 195 0 0 0 29.43 2.59c4.5.12 9 .17 13.52.2H323.91c4.51 0 9-.08 13.52-.2a196.59 196.59 0 0 0 29.44-2.59 99.57 99.57 0 0 0 28-9.21A94.22 94.22 0 0 0 436 426.84a99.3 99.3 0 0 0 9.22-28 194.79 194.79 0 0 0 2.59-29.42c.12-4.5.17-9 .2-13.51V172.14c-.01-5.35-.01-10.7-.01-16.05zm-69.88 241c-20-38.93-57.23-29.27-76.31-19.47-1.72 1-3.48 2-5.25 3l-.42.25c-39.5 21-92.53 22.54-145.85-.38A234.64 234.64 0 0 1 45 290.12a230.63 230.63 0 0 0 39.17 23.37c56.36 26.4 113 24.49 153 0-57-43.85-104.6-101-141.09-147.22a197.09 197.09 0 0 1-18.78-25.9c43.7 40 112.7 90.22 137.48 104.12-52.57-55.49-98.89-123.94-96.72-121.74 82.79 83.42 159.18 130.59 159.18 130.59 2.88 1.58 5 2.85 6.73 4a127.44 127.44 0 0 0 4.16-12.47c13.22-48.33-1.66-103.58-35.31-149.2C329.61 141.75 375 229.34 356.4 303.42c-.44 1.73-.95 3.4-1.44 5.09 38.52 47.4 28.04 98.17 23.13 88.59z"/></svg></p>
+                        </div>
+                        <button class="card-button" onclick="createIFRAME(16)">More info</button>
+                    </div>
+                </div>
+            </div>
+            <div class="more-videos"><a href="./pages/07-swift.html">...mais vídeos</a></div>
+        </div>
+
+
+<!-- FIM CATEFORIA SWIFT -->
+
+
+<!-- CATEFORIA C++ -->
+
+        <div class="all">
+            <span>C++</span>
+            <div class="videos">
+                <div class="video">
+                    <div class="card">
+                        <div class="card-details">
+                            <img id="img" src="images/thumbs/c++.jpg" alt="html">
+                            <p>conteúdo</p>
+                            <img src="images/c++.png" alt="" id="icon">
+                        </div>
+                        <button class="card-button" onclick="createIFRAME(8)">More info</button>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="card">
+                        <div class="card-details">
+                            <img id="img" src="images/thumbs/c++2.jpg" alt="html">
+                            <p>conteúdo</p>
+                            <img src="images/c++.png" alt="" id="icon">
+                        </div>
+                        <button class="card-button" onclick="createIFRAME(17)">More info</button>
+                    </div>
+                </div>
+            </div>
+            <div class="more-videos"><a href="./pages/08-c++.html">...mais vídeos</a></div>
+        </div>
+
+<!-- FIM CATEGORIA C++ -->
+
+
+<!-- BOTÃO VOLTAR PARA O TOPO -->
+
+        <a href="#top" id="meu-botao"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><style>svg{fill:#146aff}</style><path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/></svg></a>
+
+
+    </div>
+
+</main>
+
+<div class="categorias">
+    <div class="close"><p>categorias</p><div class="fecha"></div></div>
+    <div class="name" id="html" style="color: orange;">
+        <img src="images/html.png" alt="html_logo"><p class="space">html</p>
+    </div>
+    <div class="name" id="css" style="color: rgb(0, 106, 255);">
+        <img src="images/css.png" alt="css_logo"><p class="space">css</p>
+    </div>
+    <div class="name" id="js" style="color: yellow;">
+        <img src="images/js.png" alt="javascript_logo"><p class="space">js</p>
+    </div>
+    <div class="name" id="py" style="color: skyblue;">
+        <img src="images/python.png" alt="python_logo"><p class="space">python</p>
+    </div>
+    <div class="name" id="java" style="color: orangered;">
+        <img src="images/java.png" alt="java_logo"><p class="space">java</p>
+    </div>
+    <div class="name" id="kt" style="color: rgb(255, 91, 173);">
+        <img src="images/kotlin.png" alt="kotlin_logo"><p class="space">kotlin</p>
+    </div>
+    <div class="name" id="swift" style="color: rgb(216, 58, 0);">
+        <img src="images/swift.png" alt="swift_logo"><p class="space">swift</p>
+    </div>
+    <div class="name" id="c" style="color: rgb(0, 119, 255);">
+        <img src="images/c++.png" alt="C++_logo"><p class="space">C++</p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+</body>
+</html>
