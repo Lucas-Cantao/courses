@@ -13,6 +13,7 @@ body
 
 {
     background: rgb(21, 21, 31);
+    overflow-x: hidden;
 }
 
 ::-webkit-scrollbar
@@ -33,19 +34,21 @@ body
 
 /* barra do topo */
 
-main .topbar
+ .topbar
 
 {
     display: flex;
-    width: 100%;
-    margin-left: 5vw;
+    width: calc(100% - 60px);
+    margin-left: 60px;
     height: 10vh;
     justify-content: space-around;
     align-items: center;
     position: fixed;
+    z-index: 10;
+    background: rgb(21, 21, 31);
 }
 
-main .topbar p, .name
+ .topbar p, .name
 
 {
     color: limegreen;
@@ -54,7 +57,7 @@ main .topbar p, .name
     text-decoration: none;
 }
 
-main .topbar ul
+ .topbar ul
 
 {
     list-style: none;
@@ -62,7 +65,7 @@ main .topbar ul
 }
 
 
-main .topbar ul li a
+ .topbar ul li a
 
 {
     color: white;
@@ -73,7 +76,7 @@ main .topbar ul li a
     text-transform: uppercase;
 }
 
-main .topbar ul li a:hover
+ .topbar ul li a:hover
 
 {
     box-shadow: 0 0 10px white;
@@ -87,15 +90,11 @@ main .topbar ul li a:hover
 .sidebar
 
 {
-    max-width: 60px;
-    width: 5vw;
-    min-width: 35px;
+    width: 60px;
     height: 100vh;
     background: rgb(13, 13, 19);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    display: grid;
+    place-items: center;
     cursor: pointer;
     position: fixed;
 }
@@ -123,13 +122,13 @@ main .topbar ul li a:hover
 {
     position: fixed;
     background: rgb(13, 13, 19);
-    margin-top: -100vh;
     width: 20vw;
     min-width: 200px;
     height: 100vh;
     padding: 10vh 0;
     transition: .5s ease;
     margin-left: -500px;
+    z-index: 10;
 }
 
 .categorias .name
@@ -216,34 +215,25 @@ main
     display: flex;
 }
 
-.content
+
+ .all
 
 {
-    position: relative;
-    margin-left: 5vw;
-    width: 95vw;
-    height: 90vh;
-    margin-top: 10vh;
-    overflow-x: hidden;
-}
-
-
-
-.content .all
-
-{
-    width: 95vw;
+    width: calc(100% - 60px);
     color: rgb(29, 191, 255);
     padding: 1rem;
+    margin-left: 60px;
 }
 
-.content .all a
+
+
+ .all a
 
 {
     color: #fff;
 }
 
-.content .all span
+ .all span
 
 {
     padding: 0 10px 0 0;
@@ -283,6 +273,8 @@ main
     background: black;
     padding: 10px;
     cursor: pointer;
+    scale: 1;
+    transition: all .3s;
 }
 
 
@@ -431,15 +423,7 @@ main
 }
    
    
-   /*Hover*/
-.card:hover
-   
-   
-{
-    border-color: #008bf8;
-    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
-}
-   
+
 .card:hover .card-button 
 
 {
@@ -453,6 +437,8 @@ main
 
 {
     transform: rotate(-90deg) scaleX(1.1) scaleY(0.92);
+    background: linear-gradient(-45deg, #1cff42 0%, #40c9ff 100% );
+
 }
 
 
@@ -496,10 +482,10 @@ main
 footer
 
 {
-    width: 100%;
+    width: calc(100% - 60px);
+    margin-left: 30px;
     display: flex;
     justify-content: space-around;
-    width: 80vw;
     color: white;
     background: #0e0e0e;
     position: absolute;

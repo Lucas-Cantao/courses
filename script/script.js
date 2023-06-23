@@ -1,7 +1,7 @@
 const sidebar = document.querySelector(".sidebar")
 const categorias = document.querySelector(".categorias")
 const fecha = document.querySelector(".fecha")
-
+const topo = document.querySelector("#meu-botao")
 
 fecha.addEventListener("click", () => {
     categorias.style.marginLeft = '-500px'
@@ -10,6 +10,18 @@ sidebar.addEventListener("click", () => {
     categorias.style.marginLeft = "0"
 })
 
+window.addEventListener("scroll", () => {
+    const scrollY = window.pageYOffset;
+    if(scrollY < 650){
+        topo.style.scale = '0'
+    } else{
+        topo.style.scale = '1'
+    }
+})
+
+topo.addEventListener("click", () => {
+    window.scrollTo(0, 0)
+})
 
 
 const html = document.querySelector("#html")
