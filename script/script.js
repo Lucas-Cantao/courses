@@ -20,7 +20,7 @@ window.addEventListener("scroll", () => {
 })
 
 topo.addEventListener("click", () => {
-    window.scrollTo(0, 0)
+    window.scrollTo(1, 1)
 })
 
 
